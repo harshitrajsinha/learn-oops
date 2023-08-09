@@ -1,4 +1,4 @@
-# Class can be considered as user-defined data-type. Since it is a data-type, we can create variables which are called 'instances'
+# Class can be considered as user-defined data-type. Since it is a data-type, we can create variables, which are called 'instances'
 
 # Properties => Variables | Methods => Functions
 
@@ -13,7 +13,8 @@ outside class
 
 ]
 
-* Public: The properties and functions that are going to be accessed outside the class.
+# Public: 
+The properties and functions that are going to be accessed outside the class.
 
 [
 someClassInstance = new className();
@@ -21,10 +22,10 @@ someClassInstance->classProperty = 'someValue';
 someClassInstance->classMethod();
 ]
 
-* Private:
-The properties, especially, which we don't want to be accessed or changed accidently. For example someUniqueID variable. These properties are accessible within the class and not accessible outside the class but can be allowed to by creating a method in such a way that we can decide whether the accessibility is of read-only/ read+write.
+# Private:
+The properties which we don't want to be accessed or changed accidently. For example someUniqueID. These properties are accessible within the class but not accessible outside the class. However, it can be allowed to by creating a method in such a way that we can decide whether the accessibility is of read-only or read+write etc.
 
-In languages such as PHP which is dynamically typed languages, same variable can be assigned any type of value whether integer, string or boolean at different places, in order to restrict or avoid accidental assignment we can make use of private, by making a property private and allowing assignment only through a method so that we can define some rules on what type of values it can accept or be assigned with.
+In languages such as PHP which is dynamically typed languages, same variable can be assigned any type of value whether integer, string or boolean at different places, in order to restrict or avoid accidental assignment we can make use of private, by making a property private and allowing assignment only through a method so that we can define some rules on what type of values it can accept or be assigned with. For example, value for a phone number variable should be of 10 digits and should not be on any type other than positive integer
 
 
 [

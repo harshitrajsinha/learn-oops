@@ -23,3 +23,4 @@ class className{
 $someClassInstance = new className();
 $someClassInstance->classProperty = 'someValue';
 $someClassInstance->classMethod();
+
