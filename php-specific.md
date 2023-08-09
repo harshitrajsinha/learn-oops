@@ -13,7 +13,7 @@
 - Traits
 
 # Syntax:
-
+<?php
 class className{
 
     public $classProperty;
@@ -22,5 +22,6 @@ class className{
 
 $someClassInstance = new className();
 $someClassInstance->classProperty = 'someValue';
-$someClassInstance->classMethod();
+$someClassInstance->classMethod()
+?>
 
