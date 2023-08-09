@@ -46,7 +46,7 @@ In languages such as PHP which is dynamically typed languages, same variable can
 When we access a property or function outside a class, we do so by creating an instance/object of that class like (someInstance->accessbileProperty). However, in order to access a property/variable or function/method within a class we use 'this' keyword since we cannot create instance of that class inside itself.
 
 # Important:
-The objects created are not like variables (they don't store any value) but they are like pointers which point to a memory location. Example:
+The objects created are not like variables (containers, they don't store any value) but they are like pointers which point to a memory location. Example:
 someInstance2 = someInstance1 ($someInstance2 is now pointing to same memory location)
 someInstance1->someProperty = "update value"
 print(someInstance2->someProperty) [The updated value will be printed, even though the value was updated through someInstance1, because they are like pointers and not containers]
