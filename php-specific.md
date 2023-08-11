@@ -44,3 +44,34 @@ unset() is used to specifically destroy any object. Use unset() when we want to 
     $obj3 = clone $obj1;
     var_dump($obj3 === $obj1) [output: bool(false)]
 ?> -->
+
+# Static properties and methods in PHP
+
+Static properties are shared among all instances whereas a non-static property is unique for each instance.
+Within a class, we can access static property using either class name or 'self' keyword.
+
+<!-- <?php 
+
+class MyClass {
+    static $changeCounter = 0;
+
+    public function __construct() {
+        self::$changeCounter++;     
+        //MyClass::$changeCounter++; ('self' keyword can be used only within class, like 'this' keyword)
+    }
+
+}
+
+$newInstance = new MyClass();
+echo MyClass::$changeCounter.PHP_EOL; //output : 1 (Accessed using class name, not instance)
+
+$newInstance2 = new MyClass();
+echo MyClass::$changeCounter.PHP_EOL; //output : 2 (Accessed using class name, not instance)
+
+$newInstance3 = new MyClass();
+echo MyClass::$changeCounter.PHP_EOL; //output : 3 (Accessed using class name, not instance)
+
+NOTE: If same code had been written using non-static property and printed after each instantiation, then each output would have been 3
+
+?> -->
+Static methods are same like static property, shared among all instance (public static function funName(){})

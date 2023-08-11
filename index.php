@@ -11,28 +11,20 @@
 */
 
 class MyClass {
-    private $changeColor;
+    static $changeColor;
 
-    public function __construct($newColor) {
-        $this->changeColor = $newColor;
+    public function __construct() {
+        self::$changeColor = 'red';
     }
 
-    public function returnColor(){
-        echo $this->changeColor.PHP_EOL;
-    }
 
-    public function __destruct() {
-        echo "Object deleted.\n".$this->changeColor.PHP_EOL;
-    }
+    // public function __destruct() {
+    //     echo "Object deleted.\n".$this->changeColor.PHP_EOL;
+    // }
 }
 
-$myObject = new MyClass("green");  // Object created.
-$myObject2 = new MyClass("red");
+$newInstance = new MyClass();
 
-$myObject->returnColor();
-$myObject2->returnColor();
-
-unset($myObject2);
-sleep(2);
+echo MyClass::$changeColor.PHP_EOL;
 
 ?>
