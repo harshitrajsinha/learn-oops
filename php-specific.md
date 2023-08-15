@@ -32,7 +32,7 @@ unset() is used to remove references to objects and make them eligible for garba
 When we do not use either of unset() and __destruct(), object gets deleted automatically and clean up is performed and the order of deletion of object is of the order in which they were created. __destruct() is defined in order to specifically perform any further operation after deletion of object, such as to print that object has been deleted.
 unset() is used to specifically destroy any object. Use unset() when we want to destroy any object in-between the code and not at last OR use in order to change the order of object destruction. For example - if $obj1 and $obj2 are created resp. and use of unset($obj2) will instruct the program to destroy and perform clean up for $obj2 first and then at the end of program when $obj1 is not reachable, automatically destroy $obj1 and perform cleanup.
 
-# Cloning vs Assigning an object to an instantiated object
+TOPIC: Cloning vs Assigning an object to an instantiated object
 
 <!-- <?php
 
@@ -45,7 +45,7 @@ unset() is used to specifically destroy any object. Use unset() when we want to 
     var_dump($obj3 === $obj1) [output: bool(false)]
 ?> -->
 
-# Static properties and methods in PHP
+TOPIC: Static properties and methods in PHP
 
 Static properties are shared among all instances whereas a non-static property is unique for each instance.
 Within a class, we can access static property using either class name or 'self' keyword.
@@ -76,7 +76,7 @@ NOTE: If same code had been written using non-static property and printed after 
 ?> -->
 Static methods are same like static property, shared among all instance (public static function funName(){})
 
-# Class constant: 
+TOPIC: Class constant: 
 Constants associated with a class. It is like static properties, within class, can be accessed using 'self' keywrod and outside class, class-name followed by scope resolution operator followed by constant name. '$' is not used as a prefix.
 
 <!-- <?php
@@ -96,7 +96,7 @@ echo $perimeter.PHP_EOL;                //Output: 12.56
 
 Use-case:
 
-# Magic methods:
+TOPIC: Magic methods:
 There are 16 magic methods defined in PHP. 
 
 - __construct()

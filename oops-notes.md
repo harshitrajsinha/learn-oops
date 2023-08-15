@@ -46,7 +46,7 @@ In languages such as PHP which is dynamically typed languages, same variable can
 # Use of this keyword:
 We access a property or function outside a class by creating an instance/object of that class like (someInstance->accessbileProperty). However, in order to access a property/variable or function/method within a class we use 'this' keyword since we cannot create instance of that class inside the same class.
 
-# Important:
+IMPORTANT:
 The objects created are not like variables (containers, they don't store any value) but they are like pointers which point to a memory location. Example:
 someInstance2 = someInstance1 (someInstance2 is now pointing to same memory location to which someInstance1 was pointing)
 someInstance1->someProperty = "update value"
@@ -71,3 +71,4 @@ A static property is called using class name but a non-static property is called
 Different programming languages have different syntax to declare and initialize a static property. For example, PHP uses 'self' keyword in order to access a static property within a class, like use of 'this' keyword for non-static properties.
 
 NOTE: If we want any property or method to be common for all instance, such as a property to keep count of number of employees, then such property should be made static and we should use static function to access such property. However, if any property needs to be kept unique for each employee, such as employeeId or name then those properties should be non-static.
+
