@@ -75,3 +75,44 @@ NOTE: If same code had been written using non-static property and printed after 
 
 ?> -->
 Static methods are same like static property, shared among all instance (public static function funName(){})
+
+# Class constant: 
+Constants associated with a class. It is like static properties, within class, can be accessed using 'self' keywrod and outside class, class-name followed by scope resolution operator followed by constant name. '$' is not used as a prefix.
+
+<!-- <?php
+  class Maths{
+
+    const PI = 3.14;
+
+    public function display_PI(){
+        echo self::PI;
+    }
+}
+
+$radius = 2;
+$perimeter = 2*(Maths::PI)*($radius);
+echo $perimeter.PHP_EOL;                //Output: 12.56
+?> -->
+
+Use-case:
+
+# Magic methods:
+There are 16 magic methods defined in PHP. 
+
+- __construct()
+- __destruct()
+- __toString()
+- __get()
+- __set()
+- __call()
+- __invoke()
+- __sleep()
+- __wakeup()
+- __clone()
+- __unserialize()
+- __debuginfo()
+- __isset()
+- __unset()
+- __callStatic()
+- __set_state()
+

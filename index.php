@@ -11,10 +11,9 @@
 */
 
 class MyClass {
-    static $changeColor;
 
     public function __construct() {
-        self::$changeColor = 'red';
+        echo "Object is created".PHP_EOL;
     }
 
 
@@ -23,8 +22,9 @@ class MyClass {
     // }
 }
 
-$newInstance = new MyClass();
+$someObject = new MyClass();
+echo $someObject;
 
-echo MyClass::$changeColor.PHP_EOL;
+
 
 ?>
