@@ -1,3 +1,7 @@
+# Understanding class and object with an example -
+It is often said that class is a bluprint and objects are real entity or instance. But what does it mean?
+We can understand this with an example of shapes. We can create a class called 'Shape' that has properties like no_of_sides, length_of_side (assuming all sides are equal) and methods such as get_area(), get_volume(). But this just defines a structure of how something may look like, 'shape' itself does not have an existance of its own. The objects of this class such as triangle, rectangle, square etc are real entity/instance (something created out of the blueprint).
+
 # Class can be considered as user-defined data-type. Since it is a data-type, we can create variables, which are called 'instances'
 
 # Properties => Variables | Methods => Functions
